@@ -1299,18 +1299,48 @@ class DataTableComponent {
 (() => { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassDebugInfo(DataTableComponent, { className: "DataTableComponent", filePath: "lib/components/table/table.component.ts", lineNumber: 36 }); })();
 
 function DataTableHeaderComponent_p_1_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵelement(0, "p", 10);
+    i0.ɵɵelement(0, "p", 7);
 } if (rf & 2) {
     const ctx_r0 = i0.ɵɵnextContext();
     i0.ɵɵproperty("textContent", ctx_r0.dataTable.title);
 } }
-function DataTableHeaderComponent_div_12_li_2_Template(rf, ctx) { if (rf & 1) {
+function DataTableHeaderComponent_button_3_Template(rf, ctx) { if (rf & 1) {
     const _r2 = i0.ɵɵgetCurrentView();
-    i0.ɵɵelementStart(0, "li", 15)(1, "label", 16)(2, "input", 17);
-    i0.ɵɵtwoWayListener("ngModelChange", function DataTableHeaderComponent_div_12_li_2_Template_input_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r2); const ctx_r0 = i0.ɵɵnextContext(2); i0.ɵɵtwoWayBindingSet(ctx_r0.dataTable.expandColumnVisible, $event) || (ctx_r0.dataTable.expandColumnVisible = $event); return i0.ɵɵresetView($event); });
-    i0.ɵɵlistener("change", function DataTableHeaderComponent_div_12_li_2_Template_input_change_2_listener($event) { i0.ɵɵrestoreView(_r2); const ctx_r0 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r0.onChange($event)); });
+    i0.ɵɵelementStart(0, "button", 8);
+    i0.ɵɵlistener("click", function DataTableHeaderComponent_button_3_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r2); const ctx_r0 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r0.dataTable.reloadItems()); });
+    i0.ɵɵelement(1, "i", 9);
+    i0.ɵɵelementStart(2, "span", 10);
+    i0.ɵɵtext(3);
+    i0.ɵɵelementEnd()();
+} if (rf & 2) {
+    const ctx_r0 = i0.ɵɵnextContext();
+    i0.ɵɵproperty("id", ctx_r0.dataTable.id + "-refresh-button");
+    i0.ɵɵadvance(3);
+    i0.ɵɵtextInterpolate(ctx_r0.dataTable.labels.headerReload.replace("{title}", ctx_r0.dataTable.title));
+} }
+function DataTableHeaderComponent_button_4_Template(rf, ctx) { if (rf & 1) {
+    const _r3 = i0.ɵɵgetCurrentView();
+    i0.ɵɵelementStart(0, "button", 11);
+    i0.ɵɵlistener("click", function DataTableHeaderComponent_button_4_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r3); const ctx_r0 = i0.ɵɵnextContext(); return i0.ɵɵresetView(ctx_r0.columnSelectorOpen = !ctx_r0.columnSelectorOpen); });
+    i0.ɵɵelement(1, "i", 12);
+    i0.ɵɵelementStart(2, "span", 10);
+    i0.ɵɵtext(3);
+    i0.ɵɵelementEnd()();
+} if (rf & 2) {
+    const ctx_r0 = i0.ɵɵnextContext();
+    i0.ɵɵclassProp("active", ctx_r0.columnSelectorOpen);
+    i0.ɵɵproperty("id", ctx_r0.dataTable.id + "-columns-select-button");
+    i0.ɵɵattribute("aria-haspopup", true)("aria-expanded", ctx_r0.columnSelectorOpen);
+    i0.ɵɵadvance(3);
+    i0.ɵɵtextInterpolate(ctx_r0.dataTable.labels.headerColumnSelector.replace("{title}", ctx_r0.dataTable.title));
+} }
+function DataTableHeaderComponent_div_6_li_2_Template(rf, ctx) { if (rf & 1) {
+    const _r4 = i0.ɵɵgetCurrentView();
+    i0.ɵɵelementStart(0, "li", 17)(1, "label", 18)(2, "input", 19);
+    i0.ɵɵtwoWayListener("ngModelChange", function DataTableHeaderComponent_div_6_li_2_Template_input_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r4); const ctx_r0 = i0.ɵɵnextContext(2); i0.ɵɵtwoWayBindingSet(ctx_r0.dataTable.expandColumnVisible, $event) || (ctx_r0.dataTable.expandColumnVisible = $event); return i0.ɵɵresetView($event); });
+    i0.ɵɵlistener("change", function DataTableHeaderComponent_div_6_li_2_Template_input_change_2_listener($event) { i0.ɵɵrestoreView(_r4); const ctx_r0 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r0.onChange($event)); });
     i0.ɵɵelementEnd();
-    i0.ɵɵelement(3, "span", 18);
+    i0.ɵɵelement(3, "span", 20);
     i0.ɵɵelementEnd()();
 } if (rf & 2) {
     const ctx_r0 = i0.ɵɵnextContext(2);
@@ -1320,13 +1350,13 @@ function DataTableHeaderComponent_div_12_li_2_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵadvance();
     i0.ɵɵproperty("textContent", ctx_r0.dataTable.labels.expandColumn);
 } }
-function DataTableHeaderComponent_div_12_li_3_Template(rf, ctx) { if (rf & 1) {
-    const _r3 = i0.ɵɵgetCurrentView();
-    i0.ɵɵelementStart(0, "li", 15)(1, "label", 16)(2, "input", 17);
-    i0.ɵɵtwoWayListener("ngModelChange", function DataTableHeaderComponent_div_12_li_3_Template_input_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r3); const ctx_r0 = i0.ɵɵnextContext(2); i0.ɵɵtwoWayBindingSet(ctx_r0.dataTable.indexColumnVisible, $event) || (ctx_r0.dataTable.indexColumnVisible = $event); return i0.ɵɵresetView($event); });
-    i0.ɵɵlistener("change", function DataTableHeaderComponent_div_12_li_3_Template_input_change_2_listener($event) { i0.ɵɵrestoreView(_r3); const ctx_r0 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r0.onChange($event)); });
+function DataTableHeaderComponent_div_6_li_3_Template(rf, ctx) { if (rf & 1) {
+    const _r5 = i0.ɵɵgetCurrentView();
+    i0.ɵɵelementStart(0, "li", 17)(1, "label", 18)(2, "input", 19);
+    i0.ɵɵtwoWayListener("ngModelChange", function DataTableHeaderComponent_div_6_li_3_Template_input_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r5); const ctx_r0 = i0.ɵɵnextContext(2); i0.ɵɵtwoWayBindingSet(ctx_r0.dataTable.indexColumnVisible, $event) || (ctx_r0.dataTable.indexColumnVisible = $event); return i0.ɵɵresetView($event); });
+    i0.ɵɵlistener("change", function DataTableHeaderComponent_div_6_li_3_Template_input_change_2_listener($event) { i0.ɵɵrestoreView(_r5); const ctx_r0 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r0.onChange($event)); });
     i0.ɵɵelementEnd();
-    i0.ɵɵelement(3, "span", 18);
+    i0.ɵɵelement(3, "span", 20);
     i0.ɵɵelementEnd()();
 } if (rf & 2) {
     const ctx_r0 = i0.ɵɵnextContext(2);
@@ -1336,13 +1366,13 @@ function DataTableHeaderComponent_div_12_li_3_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵadvance();
     i0.ɵɵproperty("textContent", ctx_r0.dataTable.labels.indexColumn);
 } }
-function DataTableHeaderComponent_div_12_li_4_Template(rf, ctx) { if (rf & 1) {
-    const _r4 = i0.ɵɵgetCurrentView();
-    i0.ɵɵelementStart(0, "li", 15)(1, "label", 16)(2, "input", 17);
-    i0.ɵɵtwoWayListener("ngModelChange", function DataTableHeaderComponent_div_12_li_4_Template_input_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r4); const ctx_r0 = i0.ɵɵnextContext(2); i0.ɵɵtwoWayBindingSet(ctx_r0.dataTable.selectColumnVisible, $event) || (ctx_r0.dataTable.selectColumnVisible = $event); return i0.ɵɵresetView($event); });
-    i0.ɵɵlistener("change", function DataTableHeaderComponent_div_12_li_4_Template_input_change_2_listener($event) { i0.ɵɵrestoreView(_r4); const ctx_r0 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r0.onChange($event)); });
+function DataTableHeaderComponent_div_6_li_4_Template(rf, ctx) { if (rf & 1) {
+    const _r6 = i0.ɵɵgetCurrentView();
+    i0.ɵɵelementStart(0, "li", 17)(1, "label", 18)(2, "input", 19);
+    i0.ɵɵtwoWayListener("ngModelChange", function DataTableHeaderComponent_div_6_li_4_Template_input_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r6); const ctx_r0 = i0.ɵɵnextContext(2); i0.ɵɵtwoWayBindingSet(ctx_r0.dataTable.selectColumnVisible, $event) || (ctx_r0.dataTable.selectColumnVisible = $event); return i0.ɵɵresetView($event); });
+    i0.ɵɵlistener("change", function DataTableHeaderComponent_div_6_li_4_Template_input_change_2_listener($event) { i0.ɵɵrestoreView(_r6); const ctx_r0 = i0.ɵɵnextContext(2); return i0.ɵɵresetView(ctx_r0.onChange($event)); });
     i0.ɵɵelementEnd();
-    i0.ɵɵelement(3, "span", 18);
+    i0.ɵɵelement(3, "span", 20);
     i0.ɵɵelementEnd()();
 } if (rf & 2) {
     const ctx_r0 = i0.ɵɵnextContext(2);
@@ -1352,33 +1382,33 @@ function DataTableHeaderComponent_div_12_li_4_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵadvance();
     i0.ɵɵproperty("textContent", ctx_r0.dataTable.labels.selectColumn);
 } }
-function DataTableHeaderComponent_div_12_ng_template_5_li_0_Template(rf, ctx) { if (rf & 1) {
-    const _r5 = i0.ɵɵgetCurrentView();
-    i0.ɵɵelementStart(0, "li", 15)(1, "label", 16)(2, "input", 17);
-    i0.ɵɵtwoWayListener("ngModelChange", function DataTableHeaderComponent_div_12_ng_template_5_li_0_Template_input_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r5); const item_r6 = i0.ɵɵnextContext().$implicit; i0.ɵɵtwoWayBindingSet(item_r6.visible, $event) || (item_r6.visible = $event); return i0.ɵɵresetView($event); });
-    i0.ɵɵlistener("change", function DataTableHeaderComponent_div_12_ng_template_5_li_0_Template_input_change_2_listener($event) { i0.ɵɵrestoreView(_r5); const ctx_r0 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r0.onChange($event)); });
+function DataTableHeaderComponent_div_6_ng_template_5_li_0_Template(rf, ctx) { if (rf & 1) {
+    const _r7 = i0.ɵɵgetCurrentView();
+    i0.ɵɵelementStart(0, "li", 17)(1, "label", 18)(2, "input", 19);
+    i0.ɵɵtwoWayListener("ngModelChange", function DataTableHeaderComponent_div_6_ng_template_5_li_0_Template_input_ngModelChange_2_listener($event) { i0.ɵɵrestoreView(_r7); const item_r8 = i0.ɵɵnextContext().$implicit; i0.ɵɵtwoWayBindingSet(item_r8.visible, $event) || (item_r8.visible = $event); return i0.ɵɵresetView($event); });
+    i0.ɵɵlistener("change", function DataTableHeaderComponent_div_6_ng_template_5_li_0_Template_input_change_2_listener($event) { i0.ɵɵrestoreView(_r7); const ctx_r0 = i0.ɵɵnextContext(3); return i0.ɵɵresetView(ctx_r0.onChange($event)); });
     i0.ɵɵelementEnd();
-    i0.ɵɵelement(3, "span", 18);
+    i0.ɵɵelement(3, "span", 20);
     i0.ɵɵelementEnd()();
 } if (rf & 2) {
-    const item_r6 = i0.ɵɵnextContext().$implicit;
+    const item_r8 = i0.ɵɵnextContext().$implicit;
     const ctx_r0 = i0.ɵɵnextContext(2);
     i0.ɵɵadvance(2);
-    i0.ɵɵtwoWayProperty("ngModel", item_r6.visible);
+    i0.ɵɵtwoWayProperty("ngModel", item_r8.visible);
     i0.ɵɵattribute("aria-controls", ctx_r0.dataTable.id);
     i0.ɵɵadvance();
-    i0.ɵɵproperty("textContent", item_r6.header);
+    i0.ɵɵproperty("textContent", item_r8.header);
 } }
-function DataTableHeaderComponent_div_12_ng_template_5_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵtemplate(0, DataTableHeaderComponent_div_12_ng_template_5_li_0_Template, 4, 3, "li", 13);
+function DataTableHeaderComponent_div_6_ng_template_5_Template(rf, ctx) { if (rf & 1) {
+    i0.ɵɵtemplate(0, DataTableHeaderComponent_div_6_ng_template_5_li_0_Template, 4, 3, "li", 15);
 } if (rf & 2) {
-    const item_r6 = ctx.$implicit;
+    const item_r8 = ctx.$implicit;
     const ctx_r0 = i0.ɵɵnextContext(2);
-    i0.ɵɵproperty("ngIf", ctx_r0.dataTable.primaryColumn !== item_r6.property);
+    i0.ɵɵproperty("ngIf", ctx_r0.dataTable.primaryColumn !== item_r8.property);
 } }
-function DataTableHeaderComponent_div_12_Template(rf, ctx) { if (rf & 1) {
-    i0.ɵɵelementStart(0, "div", 11)(1, "ul", 12);
-    i0.ɵɵtemplate(2, DataTableHeaderComponent_div_12_li_2_Template, 4, 3, "li", 13)(3, DataTableHeaderComponent_div_12_li_3_Template, 4, 3, "li", 13)(4, DataTableHeaderComponent_div_12_li_4_Template, 4, 3, "li", 13)(5, DataTableHeaderComponent_div_12_ng_template_5_Template, 1, 1, "ng-template", 14);
+function DataTableHeaderComponent_div_6_Template(rf, ctx) { if (rf & 1) {
+    i0.ɵɵelementStart(0, "div", 13)(1, "ul", 14);
+    i0.ɵɵtemplate(2, DataTableHeaderComponent_div_6_li_2_Template, 4, 3, "li", 15)(3, DataTableHeaderComponent_div_6_li_3_Template, 4, 3, "li", 15)(4, DataTableHeaderComponent_div_6_li_4_Template, 4, 3, "li", 15)(5, DataTableHeaderComponent_div_6_ng_template_5_Template, 1, 1, "ng-template", 16);
     i0.ɵɵelementEnd()();
 } if (rf & 2) {
     const ctx_r0 = i0.ɵɵnextContext();
@@ -1423,44 +1453,28 @@ class DataTableHeaderComponent {
     static { this.ɵfac = function DataTableHeaderComponent_Factory(t) { return new (t || DataTableHeaderComponent)(i0.ɵɵdirectiveInject(forwardRef(() => DataTableComponent)), i0.ɵɵdirectiveInject(i0.ElementRef)); }; }
     static { this.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: DataTableHeaderComponent, selectors: [["data-table-header"]], hostBindings: function DataTableHeaderComponent_HostBindings(rf, ctx) { if (rf & 1) {
             i0.ɵɵlistener("click", function DataTableHeaderComponent_click_HostBindingHandler($event) { return ctx.onClickHandler($event); }, false, i0.ɵɵresolveDocument)("keyup", function DataTableHeaderComponent_keyup_HostBindingHandler($event) { return ctx.onKeyUpHandler($event); }, false, i0.ɵɵresolveDocument);
-        } }, decls: 13, vars: 10, consts: [[1, "data-table-header"], ["class", "h4 title", 3, "textContent", 4, "ngIf"], [1, "button-panel"], ["type", "button", 1, "btn", "btn-default", "btn-sm", "refresh-button", 3, "click", "id"], ["aria-hidden", "true", 1, "fa", "fa-refresh"], [1, "sr-only"], ["type", "button", 1, "btn", "btn-default", "btn-sm", "column-selector-button", 3, "click", "id"], ["aria-hidden", "true", 1, "fa", "fa-columns"], [1, "column-selector-wrapper"], ["class", "column-selector-box panel panel-default", 4, "ngIf"], [1, "h4", "title", 3, "textContent"], [1, "column-selector-box", "panel", "panel-default"], [1, "list-group", "list-group-flush"], ["class", "list-group-item column-selector-column checkbox", 4, "ngIf"], ["ngFor", "", 3, "ngForOf"], [1, "list-group-item", "column-selector-column", "checkbox"], [1, "d-flex", "align-items-center"], ["type", "checkbox", 3, "ngModelChange", "change", "ngModel"], [3, "textContent"]], template: function DataTableHeaderComponent_Template(rf, ctx) { if (rf & 1) {
+        } }, decls: 7, vars: 4, consts: [[1, "data-table-header"], ["class", "h4 title", 3, "textContent", 4, "ngIf"], [1, "button-panel"], ["type", "button", "class", "btn btn-default btn-sm refresh-button", 3, "id", "click", 4, "ngIf"], ["type", "button", "class", "btn btn-default btn-sm column-selector-button", 3, "active", "id", "click", 4, "ngIf"], [1, "column-selector-wrapper"], ["class", "column-selector-box panel panel-default", 4, "ngIf"], [1, "h4", "title", 3, "textContent"], ["type", "button", 1, "btn", "btn-default", "btn-sm", "refresh-button", 3, "click", "id"], ["aria-hidden", "true", 1, "fa", "fa-refresh"], [1, "sr-only"], ["type", "button", 1, "btn", "btn-default", "btn-sm", "column-selector-button", 3, "click", "id"], ["aria-hidden", "true", 1, "fa", "fa-columns"], [1, "column-selector-box", "panel", "panel-default"], [1, "list-group", "list-group-flush"], ["class", "list-group-item column-selector-column checkbox", 4, "ngIf"], ["ngFor", "", 3, "ngForOf"], [1, "list-group-item", "column-selector-column", "checkbox"], [1, "d-flex", "align-items-center"], ["type", "checkbox", 3, "ngModelChange", "change", "ngModel"], [3, "textContent"]], template: function DataTableHeaderComponent_Template(rf, ctx) { if (rf & 1) {
             i0.ɵɵelementStart(0, "div", 0);
             i0.ɵɵtemplate(1, DataTableHeaderComponent_p_1_Template, 1, 1, "p", 1);
-            i0.ɵɵelementStart(2, "div", 2)(3, "button", 3);
-            i0.ɵɵlistener("click", function DataTableHeaderComponent_Template_button_click_3_listener() { return ctx.dataTable.reloadItems(); });
-            i0.ɵɵelement(4, "i", 4);
-            i0.ɵɵelementStart(5, "span", 5);
-            i0.ɵɵtext(6);
-            i0.ɵɵelementEnd()();
-            i0.ɵɵelementStart(7, "button", 6);
-            i0.ɵɵlistener("click", function DataTableHeaderComponent_Template_button_click_7_listener() { return ctx.columnSelectorOpen = !ctx.columnSelectorOpen; });
-            i0.ɵɵelement(8, "i", 7);
-            i0.ɵɵelementStart(9, "span", 5);
-            i0.ɵɵtext(10);
-            i0.ɵɵelementEnd()();
-            i0.ɵɵelementStart(11, "div", 8);
-            i0.ɵɵtemplate(12, DataTableHeaderComponent_div_12_Template, 6, 4, "div", 9);
+            i0.ɵɵelementStart(2, "div", 2);
+            i0.ɵɵtemplate(3, DataTableHeaderComponent_button_3_Template, 4, 2, "button", 3)(4, DataTableHeaderComponent_button_4_Template, 4, 6, "button", 4);
+            i0.ɵɵelementStart(5, "div", 5);
+            i0.ɵɵtemplate(6, DataTableHeaderComponent_div_6_Template, 6, 4, "div", 6);
             i0.ɵɵelementEnd()()();
         } if (rf & 2) {
             i0.ɵɵadvance();
             i0.ɵɵproperty("ngIf", ctx.dataTable.showTitle);
             i0.ɵɵadvance(2);
-            i0.ɵɵproperty("id", ctx.dataTable.id + "-refresh-button");
-            i0.ɵɵadvance(3);
-            i0.ɵɵtextInterpolate(ctx.dataTable.labels.headerReload.replace("{title}", ctx.dataTable.title));
+            i0.ɵɵproperty("ngIf", ctx.dataTable.id);
             i0.ɵɵadvance();
-            i0.ɵɵclassProp("active", ctx.columnSelectorOpen);
-            i0.ɵɵproperty("id", ctx.dataTable.id + "-columns-select-button");
-            i0.ɵɵattribute("aria-haspopup", true)("aria-expanded", ctx.columnSelectorOpen);
-            i0.ɵɵadvance(3);
-            i0.ɵɵtextInterpolate(ctx.dataTable.labels.headerColumnSelector.replace("{title}", ctx.dataTable.title));
+            i0.ɵɵproperty("ngIf", ctx.dataTable.id);
             i0.ɵɵadvance(2);
             i0.ɵɵproperty("ngIf", ctx.columnSelectorOpen);
         } }, dependencies: [i1.NgForOf, i1.NgIf, i2.CheckboxControlValueAccessor, i2.NgControlStatus, i2.NgModel], styles: [".data-table-header[_ngcontent-%COMP%]{min-height:25px;margin-bottom:10px}.title[_ngcontent-%COMP%]{display:inline-block;margin:5px 0 0 5px}.button-panel[_ngcontent-%COMP%]{float:right}.button-panel[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{outline:none!important}.column-selector-wrapper[_ngcontent-%COMP%]{position:relative}.column-selector-box[_ngcontent-%COMP%]{box-shadow:0 0 10px #d3d3d3;background:#fff;width:150px;padding:10px;position:absolute;right:0;top:1px;z-index:1060}.column-selector-box[_ngcontent-%COMP%]   .list-group-item.column-selector-column[_ngcontent-%COMP%]{padding:.5rem .25rem}.column-selector-box[_ngcontent-%COMP%]   .list-group-item.column-selector-column[_ngcontent-%COMP%]   label[_ngcontent-%COMP%]{margin-bottom:0}.column-selector-box[_ngcontent-%COMP%]   .list-group-item.column-selector-column[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]{margin-right:4px;font-style:italic}"] }); }
 }
 (() => { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(DataTableHeaderComponent, [{
         type: Component,
-        args: [{ selector: 'data-table-header', template: "<div class=\"data-table-header\">\n  <p class=\"h4 title\" *ngIf=\"dataTable.showTitle\" [textContent]=\"dataTable.title\"></p>\n  <div class=\"button-panel\">\n    <button type=\"button\" class=\"btn btn-default btn-sm refresh-button\"\n            [id]=\"dataTable.id + '-refresh-button'\"\n            (click)=\"dataTable.reloadItems()\">\n      <i class=\"fa fa-refresh\" aria-hidden=\"true\"></i>\n      <span class=\"sr-only\">{{ dataTable.labels.headerReload.replace('{title}', dataTable.title) }}</span>\n    </button>\n    <button type=\"button\" class=\"btn btn-default btn-sm column-selector-button\" [class.active]=\"columnSelectorOpen\"\n            [attr.aria-haspopup]=\"true\"\n            [id]=\"dataTable.id + '-columns-select-button'\"\n            [attr.aria-expanded]=\"columnSelectorOpen\"\n            (click)=\"columnSelectorOpen = !columnSelectorOpen;\">\n      <i class=\"fa fa-columns\" aria-hidden=\"true\"></i>\n      <span class=\"sr-only\">{{ dataTable.labels.headerColumnSelector.replace('{title}', dataTable.title) }}</span>\n    </button>\n    <div class=\"column-selector-wrapper\">\n      <div *ngIf=\"columnSelectorOpen\" class=\"column-selector-box panel panel-default\">\n        <ul class=\"list-group list-group-flush\">\n          <li *ngIf=\"dataTable.expandableRows\" class=\"list-group-item column-selector-column checkbox\">\n            <label class=\"d-flex align-items-center\">\n              <input type=\"checkbox\" [(ngModel)]=\"dataTable.expandColumnVisible\" (change)=\"onChange($event)\" [attr.aria-controls]=\"dataTable.id\"/>\n              <span [textContent]=\"dataTable.labels.expandColumn\"></span>\n            </label>\n          </li>\n          <li *ngIf=\"dataTable.indexColumn\" class=\"list-group-item column-selector-column checkbox\">\n            <label class=\"d-flex align-items-center\">\n              <input type=\"checkbox\" [(ngModel)]=\"dataTable.indexColumnVisible\" (change)=\"onChange($event)\" [attr.aria-controls]=\"dataTable.id\"/>\n              <span [textContent]=\"dataTable.labels.indexColumn\"></span>\n            </label>\n          </li>\n          <li *ngIf=\"dataTable.selectColumn\" class=\"list-group-item column-selector-column checkbox\">\n            <label class=\"d-flex align-items-center\">\n              <input type=\"checkbox\" [(ngModel)]=\"dataTable.selectColumnVisible\" (change)=\"onChange($event)\" [attr.aria-controls]=\"dataTable.id\"/>\n              <span [textContent]=\"dataTable.labels.selectColumn\"></span>\n            </label>\n          </li>\n          <ng-template ngFor let-item let-i=\"index\" [ngForOf]=\"dataTable.columns\">\n            <li class=\"list-group-item column-selector-column checkbox\"\n                *ngIf=\"dataTable.primaryColumn !== item.property\">\n              <label class=\"d-flex align-items-center\">\n                <input type=\"checkbox\" [(ngModel)]=\"item.visible\" (change)=\"onChange($event)\" [attr.aria-controls]=\"dataTable.id\"/>\n                <span [textContent]=\"item.header\"></span>\n              </label>\n            </li>\n          </ng-template>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n", styles: [".data-table-header{min-height:25px;margin-bottom:10px}.title{display:inline-block;margin:5px 0 0 5px}.button-panel{float:right}.button-panel button{outline:none!important}.column-selector-wrapper{position:relative}.column-selector-box{box-shadow:0 0 10px #d3d3d3;background:#fff;width:150px;padding:10px;position:absolute;right:0;top:1px;z-index:1060}.column-selector-box .list-group-item.column-selector-column{padding:.5rem .25rem}.column-selector-box .list-group-item.column-selector-column label{margin-bottom:0}.column-selector-box .list-group-item.column-selector-column input{margin-right:4px;font-style:italic}\n"] }]
+        args: [{ selector: 'data-table-header', template: "<div class=\"data-table-header\">\n  <p class=\"h4 title\" *ngIf=\"dataTable.showTitle\" [textContent]=\"dataTable.title\"></p>\n  <div class=\"button-panel\">\n    <button type=\"button\" class=\"btn btn-default btn-sm refresh-button\"\n            *ngIf=\"dataTable.id\"\n            [id]=\"dataTable.id + '-refresh-button'\"\n            (click)=\"dataTable.reloadItems()\">\n      <i class=\"fa fa-refresh\" aria-hidden=\"true\"></i>\n      <span class=\"sr-only\">{{ dataTable.labels.headerReload.replace('{title}', dataTable.title) }}</span>\n    </button>\n    <button type=\"button\" class=\"btn btn-default btn-sm column-selector-button\" [class.active]=\"columnSelectorOpen\"\n            *ngIf=\"dataTable.id\"\n            [attr.aria-haspopup]=\"true\"\n            [id]=\"dataTable.id + '-columns-select-button'\"\n            [attr.aria-expanded]=\"columnSelectorOpen\"\n            (click)=\"columnSelectorOpen = !columnSelectorOpen;\">\n      <i class=\"fa fa-columns\" aria-hidden=\"true\"></i>\n      <span class=\"sr-only\">{{ dataTable.labels.headerColumnSelector.replace('{title}', dataTable.title) }}</span>\n    </button>\n    <div class=\"column-selector-wrapper\">\n      <div *ngIf=\"columnSelectorOpen\" class=\"column-selector-box panel panel-default\">\n        <ul class=\"list-group list-group-flush\">\n          <li *ngIf=\"dataTable.expandableRows\" class=\"list-group-item column-selector-column checkbox\">\n            <label class=\"d-flex align-items-center\">\n              <input type=\"checkbox\" [(ngModel)]=\"dataTable.expandColumnVisible\" (change)=\"onChange($event)\" [attr.aria-controls]=\"dataTable.id\"/>\n              <span [textContent]=\"dataTable.labels.expandColumn\"></span>\n            </label>\n          </li>\n          <li *ngIf=\"dataTable.indexColumn\" class=\"list-group-item column-selector-column checkbox\">\n            <label class=\"d-flex align-items-center\">\n              <input type=\"checkbox\" [(ngModel)]=\"dataTable.indexColumnVisible\" (change)=\"onChange($event)\" [attr.aria-controls]=\"dataTable.id\"/>\n              <span [textContent]=\"dataTable.labels.indexColumn\"></span>\n            </label>\n          </li>\n          <li *ngIf=\"dataTable.selectColumn\" class=\"list-group-item column-selector-column checkbox\">\n            <label class=\"d-flex align-items-center\">\n              <input type=\"checkbox\" [(ngModel)]=\"dataTable.selectColumnVisible\" (change)=\"onChange($event)\" [attr.aria-controls]=\"dataTable.id\"/>\n              <span [textContent]=\"dataTable.labels.selectColumn\"></span>\n            </label>\n          </li>\n          <ng-template ngFor let-item let-i=\"index\" [ngForOf]=\"dataTable.columns\">\n            <li class=\"list-group-item column-selector-column checkbox\"\n                *ngIf=\"dataTable.primaryColumn !== item.property\">\n              <label class=\"d-flex align-items-center\">\n                <input type=\"checkbox\" [(ngModel)]=\"item.visible\" (change)=\"onChange($event)\" [attr.aria-controls]=\"dataTable.id\"/>\n                <span [textContent]=\"item.header\"></span>\n              </label>\n            </li>\n          </ng-template>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n", styles: [".data-table-header{min-height:25px;margin-bottom:10px}.title{display:inline-block;margin:5px 0 0 5px}.button-panel{float:right}.button-panel button{outline:none!important}.column-selector-wrapper{position:relative}.column-selector-box{box-shadow:0 0 10px #d3d3d3;background:#fff;width:150px;padding:10px;position:absolute;right:0;top:1px;z-index:1060}.column-selector-box .list-group-item.column-selector-column{padding:.5rem .25rem}.column-selector-box .list-group-item.column-selector-column label{margin-bottom:0}.column-selector-box .list-group-item.column-selector-column input{margin-right:4px;font-style:italic}\n"] }]
     }], () => [{ type: DataTableComponent, decorators: [{
                 type: Inject,
                 args: [forwardRef(() => DataTableComponent)]
