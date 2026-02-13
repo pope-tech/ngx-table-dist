@@ -1397,9 +1397,6 @@ class DataTableHeaderComponent {
         this.elemRef = elemRef;
         this.columnSelectorOpen = false;
     }
-    ngAfterViewInit() {
-        console.log('datatable injected:', this.dataTable);
-    }
     onClickHandler(event) {
         if (!this.elemRef.nativeElement.contains(event.target)) {
             this.columnSelectorOpen = false;
